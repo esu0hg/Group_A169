@@ -57,4 +57,8 @@ ggplot(movie_data, aes(x = duration, y = avg_vote)) +
     plot.title = element_text(size = 12, hjust = 0.5, face = "bold", color = "gray30"),
     panel.border = element_rect(color = "black", fill = NA, size = 1) 
   )
+# Perform the Pearson correlation test
+result <- cor.test(movie_data$avg_vote, movie_data$duration, method = "pearson")
 
+# Display the result
+print(result)
