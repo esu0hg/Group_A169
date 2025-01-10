@@ -6,7 +6,7 @@ library(dplyr)
 movie_data <- read.csv("C:\\Users\\Ghouse\\A169\\Dataset\\IMDbmovies.csv"
 )
 
-
+ 
 movie_data$avg_vote <- as.numeric(movie_data$avg_vote)
 movie_data$duration <- as.numeric(movie_data$duration)
 
